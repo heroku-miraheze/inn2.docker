@@ -9,6 +9,10 @@ This script download and compile INN2 inside a Docker container using Ubuntu 20.
 
 ``docker-compose run inn2 bash``
 
+## Or run docker container from Docker Hub
+
+``docker run -p 119:119 -d --restart always -v ./config:/etc/news --hostname myhostname.com --extra-hosts "news.myhostname.com:127.0.0.1 news.myhostname.com:::1" joaquinito2051/inn2`` 
+
 ## References 
 
 https://www.eyrie.org/~eagle/software/inn/
