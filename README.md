@@ -1,7 +1,7 @@
 
 # INN2 (InterNetNews) NNTP server Docker image
 
-This script download and compile INN2 inside a Docker container using Ubuntu 20.04. At the moment it runs as a daemon and it's not possible to keep the container running.
+This script download and compile INN2 inside a Docker container using Ubuntu 18.04. At the moment it runs as a daemon and it's not possible to keep the container running.
 
 ## Setup
 
