@@ -52,6 +52,8 @@ COPY ./config/inn.conf /tmp/inn-${INN_VERSION}/samples/inn.conf
 
 RUN mkdir -p /opt/inn/db
 
+RUN mkdir -p /opt/inn/db/history
+
 RUN cd /tmp/inn-${INN_VERSION} && \
     make install && \
     make clean
