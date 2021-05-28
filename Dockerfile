@@ -50,6 +50,8 @@ RUN cd /tmp/inn-${INN_VERSION} && \
 COPY ./config/inn.conf /tmp/inn-${INN_VERSION}/site/inn.conf
 COPY ./config/inn.conf /tmp/inn-${INN_VERSION}/samples/inn.conf
 
+RUN mkdir -p /opt/inn/db
+
 RUN cd /tmp/inn-${INN_VERSION} && \
     make install && \
     make clean
